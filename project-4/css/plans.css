@@ -1,0 +1,106 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+@media (max-width: 767px) {
+  .webkit {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 10px;
+  }
+}
+
+.webkit .box .price {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  border: 3px solid white;
+  margin-bottom: 25px;
+}
+
+.webkit .free .price {
+  outline: 3px solid var(--green-color);
+}
+.webkit .Basic .price {
+  outline: 3px solid var(--blue-color);
+}
+.webkit .premium .price {
+  outline: 3px solid var(--orange-color);
+}
+
+.webkit .box .price h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.webkit .box .price p {
+  font-size: 40px;
+  position: relative;
+  margin: 0 auto;
+  width: fit-content;
+  font-weight: 500;
+}
+
+.webkit .box .price p::before {
+  content: "$";
+  position: absolute;
+  left: -20px;
+  bottom: 20px;
+  font-size: 30px;
+}
+
+.webkit .box ul li {
+  padding: 20px 0;
+
+  border-bottom: 1px solid #eee;
+}
+
+.webkit .box ul li > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webkit .box ul li > div i {
+  margin-right: 10px;
+  font-size: 17pxs;
+}
+
+.webkit .box ul li > div .check {
+  color: var(--green-color);
+}
+.webkit .box ul li > div .xmark {
+  color: var(--red-color);
+}
+
+.webkit .box ul li p {
+  font-weight: 500;
+}
+
+.webkit .box ul li > i {
+  color: var(--grey-color);
+  font-size: 15px;
+}
+
+.webkit .box .button {
+  width: fit-content;
+  margin-top: 20px;
+  padding: 8px 12px;
+  font-size: 17px;
+}
+
+.webkit .box.free .button {
+  background-color: var(--green-color);
+}
+
+.webkit .premium > div:last-of-type {
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--grey-color);
+  text-align: center;
+}

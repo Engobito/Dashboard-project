@@ -1,0 +1,130 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+.webkit {
+  gap: 20px;
+  align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  .webkit {
+    flex-direction: column-reverse;
+  }
+}
+
+.files-container {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 100%;
+}
+
+.files-container .box {
+  text-align: center;
+  padding: 10px;
+}
+
+.files-container .box i {
+  display: block;
+  text-align: left;
+  color: var(--grey-color);
+}
+
+.files-container .box img {
+  width: 65px;
+  transition: 0.3s;
+}
+
+.files-container .box img:hover {
+  transform: rotate(4deg);
+}
+
+.files-container .box > h4 {
+  font-size: 15px;
+  padding: 10px 0;
+  font-weight: 500;
+}
+.files-container .box > p {
+  text-align: left;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #eee;
+  color: var(--grey-color);
+  font-size: 13px;
+}
+
+.files-container .info p {
+  padding: 10px 0 0;
+  color: var(--grey-color);
+  font-size: 13px;
+}
+
+.files-stats {
+  min-width: 260px;
+  padding: 20px;
+}
+
+.files-stats .box {
+  padding: 10px;
+  border: 1px solid #eee;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.files-stats .stats {
+  display: flex;
+  align-items: center;
+}
+
+.files-stats .stats i {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.files-stats .stats .text {
+  font-size: 13px;
+}
+
+.files-stats .stats .text p:first-child {
+  font-weight: 500;
+}
+.files-stats .stats .text p:last-child {
+  color: var(--grey-color);
+  margin: 0;
+}
+
+.files-stats .box > p {
+  color: var(--grey-color);
+  font-size: 13px;
+}
+
+.files-stats > i {
+  width: fit-content;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.files-stats .upload {
+  width: fit-content;
+  margin: 15px auto 0;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.files-stats .upload > span:first-child {
+  margin-right: 7px;
+}
+
+@media (max-width: 767px) {
+  .files-stats {
+    padding: 10px;
+  }
+}

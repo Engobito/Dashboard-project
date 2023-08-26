@@ -1,0 +1,79 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+.box {
+  padding: 0;
+}
+
+.box .img {
+  position: relative;
+  overflow: hidden;
+}
+.box img:first-of-type {
+  max-width: 100%;
+  transition: 0.3s;
+}
+
+.box img:first-of-type:hover {
+  transform: rotate(6deg) scale(1.2);
+}
+
+.box img:last-of-type {
+  width: 64px;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  border: 2px solid white;
+}
+
+.box .text {
+  padding: 20px;
+  position: relative;
+  border-bottom: 1px solid #eee;
+}
+
+.box .text h4 {
+  margin-bottom: 15px;
+}
+
+.box .text p {
+  line-height: 1.4;
+  color: var(--grey-color);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.box .text div {
+  font-size: 13px;
+  color: white;
+  background-color: var(--blue-color);
+  padding: 5px 10px;
+  width: fit-content;
+  border-radius: 6px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  z-index: 2;
+}
+
+.box .course-info {
+  padding: 15px 20px;
+  font-size: 13px;
+  color: var(--grey-color);
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .webkit {
+    grid-template-columns: minmax(200px, 1fr);
+    padding: 10px;
+  }
+}

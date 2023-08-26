@@ -1,0 +1,90 @@
+:root {
+  --blue-color: #0075ff;
+  --blue-alt-color: #0d69d5;
+  --orange-color: #f59e0b;
+  --green-color: #22c55e;
+  --red-color: #f44336;
+  --grey-color: #888;
+}
+
+.box .contact {
+  margin: -10px 0 0 -10px;
+  font-size: 13px;
+  display: flex;
+}
+
+.box .contact i {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  color: #666;
+}
+
+.box .info {
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+.box .info img {
+  border-radius: 50%;
+  width: 100px;
+}
+.box .info img {
+}
+.box .info p {
+  color: var(--grey-color);
+  font-size: 14px;
+}
+
+.box .stats {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+.box .stats .information {
+  font-size: 15px;
+}
+.box .stats .information > div:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.box .stats .vip {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fdecce;
+  text-transform: uppercase;
+}
+
+.box .stats i {
+  margin-right: 5px;
+}
+
+.box .control {
+  padding: 20px 0 0;
+}
+
+.box .control > div:first-of-type {
+  font-size: 13px;
+  color: var(--grey-color);
+}
+
+.box .control .buttons p {
+  padding: 4px 10px;
+  font-size: 14px;
+}
+
+.box .control .buttons p:last-child {
+  background-color: var(--red-color);
+  margin-left: 3px;
+}
+
+@media (max-width: 767px) {
+  .webkit {
+    grid-template-columns: minmax(200px, 1fr);
+    padding: 10px;
+  }
+}
